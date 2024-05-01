@@ -1,0 +1,1 @@
+cd D:/isa_lab/lab2_2023/ISA_lab2_group22_file/Stand_alone_component_of_11_bit_multiplier/sim

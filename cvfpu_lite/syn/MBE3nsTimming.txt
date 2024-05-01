@@ -1,0 +1,96 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpnew_top
+Version: S-2021.06-SP4
+Date   : Sun Dec 17 16:48:25 2023
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/inp_pipe_op_q_reg[1][0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/mid_pipe_sum_q_reg[1][23]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpnew_top          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/inp_pipe_op_q_reg[1][0]/CK (DFFR_X1)
+                                                          0.00       0.00 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/inp_pipe_op_q_reg[1][0]/Q (DFFR_X1)
+                                                          0.11       0.11 r
+  U1476/ZN (OR2_X2)                                       0.08       0.19 r
+  U3408/ZN (NAND2_X1)                                     0.13       0.32 f
+  U3593/ZN (OR2_X1)                                       0.09       0.41 f
+  U3594/ZN (NAND2_X1)                                     0.03       0.44 r
+  U3595/ZN (AND2_X1)                                      0.05       0.50 r
+  U3596/ZN (INV_X1)                                       0.02       0.52 f
+  U3598/ZN (AND2_X1)                                      0.04       0.56 f
+  intadd_0/U11/CO (FA_X1)                                 0.09       0.64 f
+  intadd_0/U10/CO (FA_X1)                                 0.09       0.73 f
+  intadd_0/U9/CO (FA_X1)                                  0.09       0.83 f
+  intadd_0/U8/CO (FA_X1)                                  0.09       0.92 f
+  intadd_0/U7/CO (FA_X1)                                  0.09       1.01 f
+  intadd_0/U6/CO (FA_X1)                                  0.09       1.10 f
+  intadd_0/U5/CO (FA_X1)                                  0.09       1.19 f
+  intadd_0/U4/CO (FA_X1)                                  0.09       1.28 f
+  intadd_0/U3/CO (FA_X1)                                  0.09       1.37 f
+  intadd_0/U2/CO (FA_X1)                                  0.09       1.46 f
+  U3430/ZN (INV_X1)                                       0.03       1.49 r
+  intadd_1/U8/CO (FA_X1)                                  0.07       1.56 r
+  intadd_1/U7/CO (FA_X1)                                  0.07       1.63 r
+  intadd_1/U6/CO (FA_X1)                                  0.07       1.69 r
+  intadd_1/U5/CO (FA_X1)                                  0.07       1.76 r
+  intadd_1/U4/CO (FA_X1)                                  0.07       1.83 r
+  intadd_1/U3/CO (FA_X1)                                  0.07       1.90 r
+  intadd_1/U2/CO (FA_X1)                                  0.07       1.97 r
+  U2096/ZN (OAI21_X1)                                     0.03       2.00 f
+  U2097/ZN (INV_X1)                                       0.02       2.02 r
+  U2099/ZN (AND2_X1)                                      0.04       2.07 r
+  U2100/ZN (XNOR2_X1)                                     0.07       2.14 r
+  U1983/ZN (NOR2_X1)                                      0.04       2.18 f
+  U2302/ZN (NOR2_X1)                                      0.04       2.21 r
+  U1489/ZN (AND2_X1)                                      0.04       2.25 r
+  U1835/ZN (NAND2_X1)                                     0.02       2.28 f
+  U1520/ZN (AND2_X1)                                      0.04       2.32 f
+  U1691/ZN (OAI21_X1)                                     0.05       2.37 r
+  U4077/CO (HA_X1)                                        0.06       2.43 r
+  U4084/CO (HA_X1)                                        0.06       2.49 r
+  U4061/CO (HA_X1)                                        0.06       2.55 r
+  U2633/CO (HA_X1)                                        0.06       2.61 r
+  U3311/CO (HA_X1)                                        0.06       2.67 r
+  U1438/ZN (OR3_X2)                                       0.11       2.78 r
+  U2613/ZN (OR2_X1)                                       0.06       2.84 r
+  U1958/ZN (AND3_X1)                                      0.05       2.89 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/mid_pipe_sum_q_reg[1][23]/D (DFFS_X1)
+                                                          0.01       2.90 r
+  data arrival time                                                  2.90
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/mid_pipe_sum_q_reg[1][23]/CK (DFFS_X1)
+                                                          0.00       2.93 r
+  library setup time                                     -0.03       2.90
+  data required time                                                 2.90
+  --------------------------------------------------------------------------
+  data required time                                                 2.90
+  data arrival time                                                 -2.90
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

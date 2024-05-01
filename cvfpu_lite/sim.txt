@@ -1,0 +1,29 @@
+quit -sim
+
+
+cd D:/isa_lab/lab2_2023/ISA_lab2_group22_file/cvfpu_lite/sim
+vlog -reportprogress 300 -work work ../src/fpnew_pkg.sv
+vlog -reportprogress 300 -work work ../src/CSA.sv
+vlog -reportprogress 300 -work work ../src/cf_math_pkg.sv
+vlog -reportprogress 300 -work work ../src/mux.sv
+vlog -reportprogress 300 -work work ../src/dadda.sv
+vlog -reportprogress 300 -work work ../src/boothmul.sv
+vlog -reportprogress 300 -work work ../src/lzc.sv
+vlog -reportprogress 300 -work work ../src/rr_arb_tree.sv
+vlog -reportprogress 300 -work work ../src/fpnew_classifier.sv
+vlog -reportprogress 300 -work work ../src/fpnew_rounding.sv
+vlog -reportprogress 300 -work work ../src/fpnew_fma.sv
+vlog -reportprogress 300 -work work ../src/fpnew_opgroup_fmt_slice.sv
+vlog -reportprogress 300 -work work ../src/fpnew_opgroup_block.sv
+vlog -reportprogress 300 -work work ../src/fpnew_top.sv
+
+vlog -reportprogress 300 -work work ../src/fp_gen.sv
+vlog -reportprogress 300 -work work ../src/booth.sv
+vlog -reportprogress 300 -work work ../src/booth_pkg.sv
+vlog -reportprogress 300 -work work ../tb/booth_cov.svh
+vlog -reportprogress 300 -work work ../tb/booth_if.sv
+vlog -reportprogress 300 -work work ../tb/booth_verbose_tester.svh
+vlog -reportprogress 300 -work work ../tb/booth_tester.svh
+vlog -reportprogress 300 -work work ../tb/booth_wrap.sv
+vlog -reportprogress 300 -work work ../tb/booth_if_sva.svh
+vlog -reportprogress 300 -work work ../tb/booth_tb.sv

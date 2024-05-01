@@ -1,0 +1,13 @@
+ 
+****************************************
+Report : resources
+Design : fpnew_top
+Version: S-2021.06-SP4
+Date   : Thu Dec 14 10:32:04 2023
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+1
